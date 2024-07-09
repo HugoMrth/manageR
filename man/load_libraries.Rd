@@ -1,26 +1,27 @@
 \title{
-  Chargement de packages
-}\name{load_libraries}\alias{load_libraries}\description{
-  Charge une sélection de packages courants par thèmes.
+   Packages loading
+}\name{load_libraries}
+\alias{load_libraries}
+\description{
+Packages loading per branch of datascience. Those include some commonly used packages in each branch.
 }\usage{
   load_libraries(purpose = c("data_tidying", "data_science", "excel", "shiny", "plots", "knit"))
 }\arguments{
   \item{purpose}{
-    Ensemble des thématiques des packages. \code{data_tidying} pour le formatage des données,
-    \code{data_science} pour les méthodes statistiques,
-    \code{excel} pour le gestion des fichiers Excel,
-    \code{shiny} pour les applications Shiny,
-    \code{plots} pour la modélisation,
-    \code{knit} pour Rmarkdown et autres compilation de code.
+    Set of branches to choose from. \code{data_tidying} to handle data,
+    \code{data_science} to conduct statistical analysis,
+    \code{excel} to handle excel files,
+    \code{shiny} to create Shiny Apps,
+    \code{plots} to visualize data,
+    \code{knit} to report the results.
 }
 }\value{
-  Néant
 }\author{
   Hugo Marthinet
 }\examples{
-  # Pour tout charger
+  # Default is everything
   load_libraries()
 
-  #Si on est uniquement dans un cadre de datasciences
+  # Or a combinaison of chocies
   load_libraries(purpose = c("data_tidying", "data_sciences"))
 }
