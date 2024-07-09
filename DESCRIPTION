@@ -2,8 +2,7 @@ Package: manageR
 Type: Package
 Title: manageR
 Version: 0.3.1
-Authors@R: c(
-    person("Hugo", "Marthinet", email = "h.marthinet@gmail.com", role = "cre")
+Authors@R: person("Hugo", "Marthinet", email = "h.marthinet@gmail.com", role = "cre")
 Maintainer: Hugo Marthinet <h.marthinet@gmail.com>
 Description: File, path, env and package handling.
 License: --------
