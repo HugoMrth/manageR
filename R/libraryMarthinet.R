@@ -1,7 +1,8 @@
-libraryCESPA <- function(){
+libraryMarthinet <- function(){
   library(manageR)
   library(epiplus)
-  library(MDBprod)
+  library(dataDesc)
   library(lazyMe)
   library(surveyscores)
+  library(sampleSize)
 }
