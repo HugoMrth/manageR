@@ -1,19 +1,24 @@
 \title{
+Path to the current R script
   Chemins vers le script actif
-}\name{get_path}\alias{get_script_path}\alias{get_script_file_path}\alias{get_file_path}\description{
-  \code{get_script_path()} retourne le chemin complet du script actif. \cr
-  \code{get_script_file_path()} retourne le chemin complet du dossier du script actif. \cr
-  \code{get_file_path()} retourne le chemin du dossier du script actif.
+}\name{get_path}
+\alias{get_script_path}
+alias{get_script_file_path}
+\alias{get_file_path}
+\description{
+  \code{get_script_path()} get the full path to the current R scipt. \cr
+  \code{get_script_file_path()} get the full path to folder where the current R scipt is saved. \cr
+  \code{get_file_path()} get the path to folder where the current R scipt is saved.
 }\usage{
   get_script_path()
   get_script_file_path()
   get_file_path()
 }\value{
-  Retourne un chemin sous forme de chaîne de caractère.
+ A character string
 }\author{
   Hugo Marthinet
 }\examples{
-## Aucun argument nécessaire
+## No arg
 get_script_path()
 get_script_file_path()
 get_file_path()
