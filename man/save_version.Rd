@@ -10,7 +10,7 @@
   version = TRUE, signature = NULL)
 }\arguments{
   \item{new.versionning}{
-First save recquires \code{new.versionning = TRUE). Not needed afterwards.
+First save recquires \code{new.versionning = TRUE)}. Not needed afterwards.
 }
   \item{date}{
 Whether or not to include the date in the file name. Default is \code{date = TRUE}.
