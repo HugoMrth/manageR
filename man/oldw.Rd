@@ -2,10 +2,10 @@
 \alias{oldw}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Nombre de warnings()
+  Number of active warnings()
 }
 \description{
-  Retourne le nombre de warnings().
+
 }
 \usage{
   oldw()
@@ -15,7 +15,7 @@
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-  Néant
+
 }
 \references{
 %% ~put references to the literature/web site here ~
