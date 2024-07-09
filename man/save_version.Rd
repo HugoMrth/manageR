@@ -1,26 +1,25 @@
 \title{
-  Gestion du versionning d'un script
+  Script versionning
 }
 \name{save_version}
 \alias{save.script.version}
 \description{
-  Sauvegarde une copie du script actif en lui attribuant unnom permettant une gestion simple du versionning.
+  Saves a timestamped copy of the active R script.
 }\usage{
   save.script.version(new.versionning = FALSE, date = TRUE,
-  version = TRUE, initiales = NULL)
+  version = TRUE, signature = NULL)
 }\arguments{
   \item{new.versionning}{
-    Lors de la première création d'un script versionné, il faut renseigner \code{new.versionning = TRUE}.
-    Une fois le versionning fait pour la première fois, \code{new.versionning = FALSE}
+First save recquires \code{new.versionning = TRUE). Not needed afterwards.
 }
   \item{date}{
-    Choix d'inclure ou non la date dans le nom du script. Par défaut \code{date = TRUE}.
+Whether or not to include the date in the file name. Default is \code{date = TRUE}.
 }
   \item{version}{
-    Choix d'inclure ou non la version installée de R dans le nom du script. Par défaut \code{version = TRUE}.
+Whether or not to include the current R version in the file name. Default is \code{date = TRUE}.
 }
-  \item{initiales}{
-    Signature de l'auteur de la version à sauvegarder (généralement les intiales).
+  \item{signature}{
+Author initials to add to the file name.
 }
 }
 \details{
@@ -31,9 +30,9 @@
 }\author{
   Hugo Marthinet
 }\examples{
-  #La première fois
-  save.script.version(new.versionning = TRUE, initiales = "HM")
+  #First save
+  save.script.version(new.versionning = TRUE, signature = "HM")
 
-  #Celles d'après
+  #After the first save
   save.script.version(initiales = "HM")
 }
