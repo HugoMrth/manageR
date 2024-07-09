@@ -1,19 +1,18 @@
 \title{
-  Code source et fichier dedocumentaion d'une fonction
+Documentation source code of a function
 }
 \name{get_function}
-\alias{get_function.na}
+\alias{get_function}
 \description{
-  Retourne une liste contenant le code source (\code{code_source}) de la fonction en argument et le texte du fichier
-  de documentation de cette fonction  (\code{Rd}) .
+Get the source code of the documentation file (\code{.Rd}) of a given function as a list.
 }\usage{
   get_function(func, pkg = NULL)
 }\arguments{
   \item{func}{
-    Nom de la fonction sous forme de chaîne de caractères.
+    Function name as a character string.
 }
 }\value{
-  Une liste de code source.
+  A list
 }\author{
   Hugo Marthinet
 }\examples{
