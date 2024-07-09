@@ -2,11 +2,10 @@
 \alias{reset_env}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Supprime les variables dans l'environnement
+  Global env cleanup
 }
 \description{
-  Equivalent à \code{rm(list = ls())}, mais conserve les packages et autres fonctions chargées.
-  Supprime uniquementles variables présentent dans l'environnement.
+Clear every object in the global environment. Differs from \code{rm(list = ls())} because this does not clean up the loaded packages and functions.
 }
 \usage{
   reset_env()
@@ -22,7 +21,7 @@
 %% ~put references to the literature/web site here ~
 }
 \author{
-  Néant
+
 }
 \note{
 %%  ~~further notes~~
