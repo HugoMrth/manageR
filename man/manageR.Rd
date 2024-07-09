@@ -10,7 +10,7 @@
 }
 
 \description{
-  Ensemble de fonctions permettant une meilleure gestion des fichiers, des paramètres de R et des libraries.
+  File, path, env and package handling.
 }
 
 \details{
@@ -18,7 +18,7 @@
     Package: \tab  manageR \cr
     Type: \tab
     Package\cr
-    Version: \tab  0.1.0 \cr
+    Version: \tab  0.2.0 \cr
     Date: \tab  01/10/2022 \cr
     License: \tab neant \cr
     LazyLoad: \tab yes\cr
@@ -36,10 +36,10 @@
 }
 
 \seealso{
-  Autres packages developpes au CESPA :
+  Other packages by the same author :
 
-  \code{\link{epiplus}}, \code{\link{MDBprod}}, \code{\link{lazyMe}},
-  \code{\link{surveyscores}}, \code{\link{NSN}}
+  \code{\link{epiplus}}, \code{\link{dataDesc}}, \code{\link{lazyMe}},
+  \code{\link{surveyscores}}, \code{\link{sampleSize}}
 }
 
 \examples{
