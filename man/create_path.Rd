@@ -2,12 +2,11 @@
 \alias{create_path}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Creation rapide d'un chemin
+Fast path creation
 }
 \description{
-  Cree un chemin pour un enregistrement rapide de fichier. \cr
-  Concatene du fichier dans lequel se trouve le script actif et le nom de fichier en entrée. \cr
-  L'extension par defaut est .xlsx.
+Fast path creation for file saving.
+Paste the current R script path and the argument string. Automatically add an extension.
 }
 \usage{
   create_path(file_name, auto_full_path = TRUE, previous_file = FALSE,
@@ -17,33 +16,29 @@
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{file_name}{
-    Nom du fichier
+File name.
 }
   \item{auto_full_path}{
-    Par defaut TRUE, concatene le chemin vers le dossier ou se trouve le script actif.
-    Sinon, concatene l'argument \code{path} (vide par défaut).
+If \code{auto_full_path = TRUE} (default), paste the full script path to the file name.
+Otherwise, user has to type de full path manually.
 }
   \item{previous_file}{
-    Par defaut FALSE, remonte d'un cran dans l'arborescence du chemin. Inutile si \code{auto_full_path = FALSE}.
+If \code{previous_file = TRUE} (default is \code{FALSE}), generated path last level get deleted. Ignored if \code{auto_full_path = FALSE}.
 }
   \item{time_stamp}{
-    Par defaut TRUE, ajout de la date en format YYYY/MM/DD en début de nom de fichier.
+Add a YYYY/MM/DD datestamp to the file name, default is \code{time_stamp = TRUE}
 }
   \item{hour}{
-    Par defaut FALSE, ajoute aussi l'heure. Inutile si \code{time_stamp = FALSE}.
+Also add a timestamp to the file name. Ignored if \code{time_stamp = FALSE}
 }
   \item{extension}{
-    Par defaut .xlsx. Renseigner l'extension voulue avec le .
-}
-  \item{path}{
-    Si \code{auto_full_path = FALSE}, est evalue et concatene la chaine de caractere renseigné avant le nom du fichier.
+File extension, default is \code{extension = ".xlsx"}. 
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-    Retourne le chemin sous forme de chaîne de caractères.
 }
 \references{
 %% ~put references to the literature/web site here ~
@@ -61,12 +56,12 @@
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-## Simplement avec le nom du fichier, pratique pour enregistrer un tableau Excel
+## Fully automatic
 create_path("fichier")
 
-## Autres utilisations plus personnalisées
+## Personnalized uses
 create_path("fichier", previous_file = TRUE)
 create_path("fichier", extension = ".csv")
 create_path("fichier", hour = TRUE, auto_full_path = FALSE,
-            path = "Un_autre_chemin")
+            path = "another_path")
 }
