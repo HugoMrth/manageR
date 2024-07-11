@@ -13,10 +13,10 @@
 First save recquires \code{new.versionning = TRUE)}. Not needed afterwards.
 }
   \item{date}{
-Whether or not to include the date in the file name. Default is \code{date = TRUE}.
+Wether or not to include the date in the file name. Default is \code{date = TRUE}.
 }
   \item{version}{
-Whether or not to include the current R version in the file name. Default is \code{date = TRUE}.
+Wether or not to include the current R version in the file name. Default is \code{date = TRUE}.
 }
   \item{signature}{
 Author initials to add to the file name.
