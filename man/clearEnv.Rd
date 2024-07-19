@@ -1,14 +1,18 @@
 \name{clearEnv}
 \alias{clearEnv}
+\alias{clearPlots}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-  Global env cleanup
+  Envi cleanup
 }
 \description{
-Clear every object in the global environment. Differs from \code{rm(list = ls())} because this does not clean up the loaded packages and functions.
+\code{clearEnv} clears every object in the global environment. Differs from \code{rm(list = ls())} because this does not clean up the loaded packages and functions.
+\cr
+\code{clearPlots} clears every computed plots. This can be usefull in envs without much memory storing space.
 }
 \usage{
   clearEnv()
+  clearPlots()
 }
 %- maybe also 'usage' for other objects documented here.
 \details{
@@ -34,6 +38,7 @@ Clear every object in the global environment. Differs from \code{rm(list = ls())
 }
 \examples{
 clearEnv()
+  clearPlots()
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory (show via RShowDoc("KEYWORDS")):
