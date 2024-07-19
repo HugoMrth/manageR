@@ -1,5 +1,5 @@
-\name{reset_env}
-\alias{reset_env}
+\name{clearEnv}
+\alias{clearEnv}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
   Global env cleanup
@@ -8,7 +8,7 @@
 Clear every object in the global environment. Differs from \code{rm(list = ls())} because this does not clean up the loaded packages and functions.
 }
 \usage{
-  reset_env()
+  clearEnv()
 }
 %- maybe also 'usage' for other objects documented here.
 \details{
@@ -33,7 +33,7 @@ Clear every object in the global environment. Differs from \code{rm(list = ls())
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-reset_env()
+clearEnv()
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory (show via RShowDoc("KEYWORDS")):
