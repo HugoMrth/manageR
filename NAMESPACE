@@ -7,7 +7,7 @@ export(install.packages.cespa)
 #export(libraryCESPA)
 export(load_libraries)
 export(oldw)
-export(reset_env)
+export(clearEnv)
 export(save.script.version)
 export(installMarthinet)
 
