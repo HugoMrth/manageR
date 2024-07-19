@@ -19,7 +19,7 @@
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-  Néant
+  None.
 }
 \references{
 %% ~put references to the literature/web site here ~
