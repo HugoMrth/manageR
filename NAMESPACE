@@ -8,6 +8,7 @@ export(install.packages.cespa)
 export(load_libraries)
 export(oldw)
 export(clearEnv)
+export(clearPlots)
 export(save.script.version)
 export(installMarthinet)
 
