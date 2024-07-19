@@ -1,3 +1,3 @@
-reset_env <- function() {
+clearEnv <- function() {
   rm(list = setdiff(ls(.GlobalEnv), lsf.str(.GlobalEnv)), envir = .GlobalEnv)
 }
