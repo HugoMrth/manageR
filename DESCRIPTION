@@ -11,3 +11,7 @@ LazyData: true
 RoxygenNote: 7.1.1
 Imports: stringr, dplyr, tidyr, DescTools, remotes, openxlsx, remotes
 Author: Hugo Marthinet [cre]
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
