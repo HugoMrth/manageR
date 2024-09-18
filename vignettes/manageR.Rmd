@@ -1,0 +1,49 @@
+---
+title: "<h1 style='text-align:center;'> Manage files and env </h1>"
+author: "Hugo Marthinet"
+date: "`r Sys.Date()`"
+output:
+  knitr:::html_vignette:
+  toc: true
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Manage files and env}
+  %\usepackage[utf8]{inputenc}
+---
+
+\setmainfont{Calibri Light}
+
+```{r, echo = FALSE, message = FALSE}
+
+# If you want to create a PDF document paste the following after line 9 above:
+#   pdf_document:
+#     toc: true
+#     highlight: tango
+#     number_sections: no
+#     latex_engine: xelatex    
+# header-includes: 
+#    - \usepackage{fontspec}
+
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+options(tibble.print_min = 4L, tibble.print_max = 4L)
+library(manageR)
+```
+
+## Clear Env
+
+```{r, message = FALSE}
+?clearEnv()
+clearEnv()
+
+?clearPlots()
+clearPlots()
+```
+
+## Files and path managment
+
+```{r, message = FALSE}
+# Get path from active script
+get_script_path()
+# Get path from active folder
+get_script_file_path()
+```
