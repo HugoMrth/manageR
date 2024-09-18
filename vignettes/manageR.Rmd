@@ -29,6 +29,8 @@ options(tibble.print_min = 4L, tibble.print_max = 4L)
 library(manageR)
 ```
 
+This packages provides functions to handle file paths and R environment. Those are mostly placeholders for obscure base R functions.
+
 ## Clear Env
 
 ```{r, eval = FALSE, message = FALSE}
