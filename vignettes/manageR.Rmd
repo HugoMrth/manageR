@@ -31,17 +31,17 @@ library(manageR)
 
 ## Clear Env
 
-```{r, message = FALSE}
-?clearEnv()
+```{r, eval = FALSE, message = FALSE}
+?clearEnv
 clearEnv()
 
-?clearPlots()
+?clearPlots
 clearPlots()
 ```
 
 ## Files and path managment
 
-```{r, message = FALSE}
+```{r, eval = FALSE, message = FALSE}
 # Get path from active script
 get_script_path()
 # Get path from active folder
