@@ -1,4 +1,4 @@
 library(testthat)
-library(pkg)
+library(manageR)
 
 test_check("manageR")
