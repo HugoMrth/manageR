@@ -1,6 +1,6 @@
 library(testthat)
-library(manageR)
+library(epiplus)
 
-test_check("manageR")
+test_check("epiplus")
 
 # devtools::test()
